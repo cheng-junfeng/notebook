@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10pt">
+
+    <TextView
+        android:id="@+id/li_count"
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:gravity="center"
+        android:textSize="20pt"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/all_shape_red_circle"
+        android:text="1"/>
+
+    <LinearLayout
+        android:id="@+id/li_layout"
+        android:layout_width="0pt"
+        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5pt"
+                android:gravity="start"
+                android:textColor="@color/blackText1"
+                android:text="时间" />
+
+            <TextView
+                android:id="@+id/time_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5pt"
+                android:layout_marginLeft="20pt"
+                android:gravity="start"
+                android:textColor="@color/blackText1"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5pt"
+                android:gravity="start"
+                android:textColor="@color/blackText1"
+                android:text="内容" />
+
+            <TextView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5pt"
+                android:layout_marginLeft="20pt"
+                android:gravity="start"
+                android:textColor="@color/color_red"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5pt"
+                android:gravity="start"
+                android:textColor="@color/blackText1"
+                android:text="描述" />
+
+            <TextView
+                android:id="@+id/descrp_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5pt"
+                android:layout_marginLeft="20pt"
+                android:gravity="start"
+                android:textColor="@color/blackText1"
+                android:text="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/li_image"
+        android:layout_weight="1"
+        android:layout_width="100pt"
+        android:layout_height="100pt"
+        android:layout_gravity="center"
+        android:src="@drawable/black_scan"/>
+</LinearLayout>

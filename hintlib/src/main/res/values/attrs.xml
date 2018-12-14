@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 仿华为圆形加载进度条 -->
+    <declare-styleable name="ScaleProgressView">
+        <attr name="progressColor" format="color" />
+        <attr name="baseColor" format="color" />
+        <attr name="dotColor" format="color" />
+        <attr name="textSize" />
+        <attr name="textColor" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:visibility="gone"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="288pt"
+            android:layout_height="288pt"
+            android:layout_marginTop="238pt"
+            android:layout_marginLeft="245pt"
+            android:src="@mipmap/no_data"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#8F8F8F"
+            android:textSize="31pt"
+            android:text="现在暂时没有数据"
+            android:gravity="center"/>
+    </LinearLayout>
+</FrameLayout>

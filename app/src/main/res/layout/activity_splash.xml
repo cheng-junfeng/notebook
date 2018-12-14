@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/morning" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400pt"
+        android:gravity="center"
+        android:text="扫码笔记"
+        android:textColor="@android:color/white"
+        android:textSize="60pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80pt"
+        android:background="@color/alpha_10_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/splash_bottom_padding">
+
+        <TextView
+            android:id="@+id/splash_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="25pt" />
+
+        <TextView
+            android:id="@+id/splash_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20pt"
+            android:gravity="center"
+            android:lineSpacingExtra="4pt"
+            android:textColor="@android:color/white"
+            android:textSize="25pt" />
+
+    </LinearLayout>
+</RelativeLayout>

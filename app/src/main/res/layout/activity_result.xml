@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ImageView
+        android:id="@+id/result_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="时间：" />
+
+            <TextView
+                android:id="@+id/result_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left|top"
+                android:padding="5dp"
+                android:text="2018-11-03 14:28"
+                android:textColor="@color/blackText1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="扫描结果：" />
+
+            <TextView
+                android:id="@+id/result_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/all_item_black_selector"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left|top"
+                android:padding="15dp"
+                android:textColor="@color/blackText1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:paddingBottom="5dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="描述：" />
+
+            <com.custom.view.MultiEditInputView
+                android:id="@+id/save_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:maxCount="100"
+                app:hintText="请输入描述" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_marginTop="20pt"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textSize="30pt"
+                android:background="@drawable/all_item_blue_selector"
+                android:text="保存" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

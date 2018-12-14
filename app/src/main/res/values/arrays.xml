@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="about_list">
+        <item>版本</item>
+        <item>关于</item>
+    </array>
+
+    <!--发现页图片-->
+    <integer-array name="find_gv_image1">
+        <item>@drawable/light_checked</item>
+    </integer-array>
+    <!--发现页图片对应的位子-->
+    <string-array name="find_gv_title1">
+        <item>X5</item>
+    </string-array>
+</resources>

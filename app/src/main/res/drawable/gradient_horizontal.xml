@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--angle 45从左往右  0 从上往下  90 从下往上-->
+    <gradient
+        android:angle="45"
+        android:startColor="#FFFFFF"
+        android:endColor="#FF0000" />
+</shape>

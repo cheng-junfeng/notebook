@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme.ImagesDetail">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
+</resources>
